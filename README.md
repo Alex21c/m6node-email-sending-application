@@ -9,7 +9,7 @@
 [FrontEnd Email sending application (Module #6, MERN Stack)](https://github.com/Alex21c/frontend-m6node-email-sending-application)
 
 ## Objectives
-+ Created a Basic Form and Send Mail Using Nodemailer.
++ Created a Basic Form collecting Username and email, then will send stock market quote to the email address using using Nodemailer.
 + Learnt fundamentals of building a simple web form and using Nodemailer to send emails. 
 + Handling POST requests from the form
 + Parsing form data using body-parser or Express's built-in middleware.
