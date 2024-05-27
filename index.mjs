@@ -16,7 +16,7 @@ app.use(e.urlencoded());
       res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
       res.header('Access-Control-Allow-Headers', 'Content-Type');
     }else{
-      res.header('Access-Control-Allow-Origin', 'https://m6node-email-sending-application.vercel.app');
+      res.header('Access-Control-Allow-Origin', 'https://frontend-m6node-email-sending-application.vercel.app');
       res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
       res.header('Access-Control-Allow-Headers', 'Content-Type');
     }
