@@ -4,5 +4,5 @@ import ValidationMiddleware from "../Middlewares/Validation.Middleware.mjs";
 // Creating a route
 const emailRouter = e.Router();
 emailRouter.post('/stock-market-quote', ValidationMiddleware, sendEmailController.sendEmail);
-
+emailRouter.get('/handshake/hello', sendEmailController.handshakeHello);
 export default emailRouter;

@@ -21,8 +21,6 @@ function getStockMarketQuote(){
 }
 
 
-
-
 const sendEmail = async(req, res, next)=>{
   // console.log(getStockMarketQuote());    
   // res.end('wait!')
@@ -144,8 +142,18 @@ const sendEmail = async(req, res, next)=>{
 }
 
 
+
+
+const handshakeHello = async (req, res)=>{
+  res.json({
+    success: true,
+    message: "hi there!"
+  });
+}
+
 const sendEmailController = {
-  sendEmail
+  sendEmail,
+  handshakeHello
 };
 
 export default sendEmailController;
