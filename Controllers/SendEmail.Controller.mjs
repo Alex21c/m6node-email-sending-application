@@ -49,7 +49,7 @@ const sendEmail = async(req, res, next)=>{
         // throw new Error('testing is the thing')
         const info = await transporter.sendMail(
           {
-            from: `devatalex21c.in <${process.env.GMAIL_EMAIL_ID}>`,
+            from: `${process.env.GMAIL_USERNAME} <${process.env.GMAIL_EMAIL_ID}>`,
             to: req.body.email,
             subject: `${req.body.firstName}, Yours Stock Market Quote`,
             html: `
