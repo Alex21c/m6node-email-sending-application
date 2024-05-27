@@ -7,14 +7,26 @@ import 'dotenv/config'
 const app = e();
 
 const PORT=4000;
-const upload=multer();
 app.use(morgan('dev'));
-app.use("/api/v1/send-email", upload.none(),  emailRouter);
+app.use(e.urlencoded());
+// CORS
+  app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+  });
+
+// const upload=multer();
+
+// app.use("/api/v1/send-email", upload.none(),  emailRouter);
+app.use("/api/v1/send-email",  emailRouter);
 
 // Error handling middleware
 app.use((err, req, res, next)=> {
   console.log('ERROR', err.message);
-  res.status(err.status).json({
+  
+  res.status(err.status || 500).json({
     success: false,
     message: err.message
   })

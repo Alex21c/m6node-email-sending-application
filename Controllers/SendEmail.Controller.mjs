@@ -22,9 +22,17 @@ function getStockMarketQuote(){
 
 
 const sendEmail = async(req, res, next)=>{
-  // console.log(getStockMarketQuote());    
-  // res.end('wait!')
+  // console.log(req.body);
+  // setTimeout(()=>{
+  //   res.json({
+  //     success: true,
+  //     message: "wait"
+  //   })
+
+  // }, 5000);
   // return;
+
+
   try {  
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
