@@ -1,7 +1,7 @@
 {
   "name": "m6node-email-sending-application",
   "version": "1.0.0",
-  "description": "mlcToDoDescription",
+  "description": "Created a Basic Form collecting Username and email, then will send stock market quote to the email address using using Nodemailer.",
   "main": "index.mjs",
   "scripts": {
     "start": "nodemon index.mjs"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Alex21c/m6node-email-sending-application"
   },
   "keywords": [
-    "mlcToDoKeyword1",
-    "mlcToDoKeyword2",
+    "email sending",
+    "nodemailer",
     "alex21c"
   ],
   "author": "Abhishek kumar",

@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "b1a69a93-6758-48b6-82cb-72f4b25d3acd",
+		"name": "emailSendingApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32540147"
+	},
+	"item": [
+		{
+			"name": "localhost",
+			"item": [
+				{
+					"name": "send mail stock market quote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "Abhishek",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aasalex21c@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/send-email/stock-market-quote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"send-email",
+								"stock-market-quote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "handshakeHello",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Abhishek",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aasalex21c@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/send-email/handshake/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"send-email",
+								"handshake",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "render",
+			"item": [
+				{
+					"name": "send mail stock market quote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "Abhishek",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aasalex21c@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://m6node-email-sending-application.onrender.com/api/v1/send-email/stock-market-quote",
+							"protocol": "https",
+							"host": [
+								"m6node-email-sending-application",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"send-email",
+								"stock-market-quote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "handshakeHello",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Abhishek",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aasalex21c@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://m6node-email-sending-application.onrender.com/api/v1/send-email/handshake/hello",
+							"protocol": "https",
+							"host": [
+								"m6node-email-sending-application",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"send-email",
+								"handshake",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
