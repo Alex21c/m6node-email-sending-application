@@ -38,8 +38,8 @@ GMAIL_APP_PASSWORD= CREATE_YOUR_OWN_PASSWORD_FROM_APP_PASSWORD
 [Postman API Endpoints.json](emailSendingApplication.postman_collection.json)
 
 
-## API End Points : UrlShortener
-### 1. Short URL
+## API End Points : Send Email
+### 1. Send Email
 ```
 POST /api/v1/send-email/stock-market-quote
 ```
